@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- SEO Tags-->
+	<title>Temperature</title>
+	 <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <script src="app.js"></script>
+</head>
+
+<body class="mainBody">
+    <div class="container">
+        <div class="text-center" style="margin-top: 3em;">
+            <h1 class="display-4">Temperature</h1>
+            <p class="lead">Track weather right from your homescreen with this beautiful widget</p>
+        </div>
+        <div class="row">
+            <div class="col-md"></div>
+            <!--Column 1-->
+
+            <div class="col-md">
+                <!--Column 2-->
+
+                <div class="cardFormat ">
+                    <div class="card-body">
+
+                        <div class="row card-title" style="margin: auto;">
+                            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+                        </div>
+
+                        <div class="row errorBox">
+                            <div class="col">
+                                <div class="alert alert-danger text-center" role="alert">
+                                    Location not found
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row locData">
+
+                            <div class="table-responsive-md " style="margin: auto; padding-left: 10px; padding-right: 10px;">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><span  >Location: </span></td>
+                                            <th><span class="location-name">--</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span >Timezone: </span></td>
+                                            <td><span class="location-timezone">--</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span >Time: </span></td>
+                                            <td><span class="location-localtime">--</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="temperature">                                                    
+                                                    <h1>
+                                                        <span class="temperature-degree">--</span> 
+                                                        °
+                                                        <span class="temperature-symb">C</span>
+                                                    </h1>
+                                                    <h5>
+                                                        <span class="badge badge-pill badge-light">Feels Like</span>
+                                                        <span class="feelslike-degree">--</span> 
+                                                        °
+                                                        <span class="feelslike-symb">C</span> 
+                                                        
+                                                    </h5>
+                                                    
+                                                    <span class="badge badge-pill badge-primary tempPill">Primary</span>
+                                                </div>
+                                            </td> 
+                                                                               
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="icon">Icon</div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <span>Chance of Rain</span>
+                                                <h5><span class = "precip">--</span></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span >Humidity</span>
+                                                <h5><span class="humidity">--</span></h5>
+                                            </td>
+                                            <td>
+                                                <span >Cloud Cover</span>
+                                                <h5><span class="cloudcover">--</span></h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-outline-primary getLocation " style="border-radius: 50px;"><i
+                                        class="fa fa-map-marker"></i> Fetch my location</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+            </div>
+            <div class="col-md"></div>
+            <!--Column 3-->
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
