@@ -1,4 +1,5 @@
 {
+  "homepage": "http://RSP22SCM11B.github.io/Temperature-Widget",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
